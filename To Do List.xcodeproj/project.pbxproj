@@ -10,9 +10,11 @@
 		48323F161E1D728B00B262DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48323F151E1D728B00B262DC /* AppDelegate.swift */; };
 		48323F181E1D728B00B262DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48323F171E1D728B00B262DC /* ViewController.swift */; };
 		48323F1B1E1D728B00B262DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48323F191E1D728B00B262DC /* Main.storyboard */; };
-		48323F1E1E1D728C00B262DC /* To_Do_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48323F1C1E1D728B00B262DC /* To_Do_List.xcdatamodeld */; };
 		48323F201E1D728C00B262DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48323F1F1E1D728C00B262DC /* Assets.xcassets */; };
 		48323F231E1D728C00B262DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48323F211E1D728C00B262DC /* LaunchScreen.storyboard */; };
+		48323F301E1D7E0F00B262DC /* Item+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48323F2E1E1D7E0F00B262DC /* Item+CoreDataClass.swift */; };
+		48323F311E1D7E0F00B262DC /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48323F2F1E1D7E0F00B262DC /* Item+CoreDataProperties.swift */; };
+		484C020F1E1D838000239FD0 /* To_Do_List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 48323F1C1E1D728B00B262DC /* To_Do_List.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		48323F1F1E1D728C00B262DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48323F221E1D728C00B262DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48323F241E1D728C00B262DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48323F2E1E1D7E0F00B262DC /* Item+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataClass.swift"; path = "../Item+CoreDataClass.swift"; sourceTree = "<group>"; };
+		48323F2F1E1D7E0F00B262DC /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Item+CoreDataProperties.swift"; path = "../Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,8 @@
 			children = (
 				48323F151E1D728B00B262DC /* AppDelegate.swift */,
 				48323F171E1D728B00B262DC /* ViewController.swift */,
+				48323F2E1E1D7E0F00B262DC /* Item+CoreDataClass.swift */,
+				48323F2F1E1D7E0F00B262DC /* Item+CoreDataProperties.swift */,
 				48323F191E1D728B00B262DC /* Main.storyboard */,
 				48323F1F1E1D728C00B262DC /* Assets.xcassets */,
 				48323F211E1D728C00B262DC /* LaunchScreen.storyboard */,
@@ -140,8 +146,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				48323F181E1D728B00B262DC /* ViewController.swift in Sources */,
-				48323F1E1E1D728C00B262DC /* To_Do_List.xcdatamodeld in Sources */,
+				484C020F1E1D838000239FD0 /* To_Do_List.xcdatamodeld in Sources */,
+				48323F301E1D7E0F00B262DC /* Item+CoreDataClass.swift in Sources */,
 				48323F161E1D728B00B262DC /* AppDelegate.swift in Sources */,
+				48323F311E1D7E0F00B262DC /* Item+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +288,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "projects.jeff.To-Do-List";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -303,6 +312,7 @@
 				48323F291E1D728C00B262DC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
