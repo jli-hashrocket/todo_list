@@ -20,6 +20,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         self.tableView.dataSource = self
         self.tableView.delegate = self
+        
+        let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+        let request:NSFetchRequest<NSFetchRequestResult> = Item.fetchRequest()
+        var results:[AnyObject]?
+        
+        do {
+            results = try context.fetch(request)
+        } catch _ {
+            results = nil
+        }
+        
+        if results != nil {
+            self.items = results as! [Item]
+        }
+        
+        self.tableView.reloadData()
+
+
     }
 
     override func didReceiveMemoryWarning() {
